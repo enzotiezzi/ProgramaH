@@ -1,3 +1,7 @@
+.settings
+sh.exe.stackdump
+
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
