@@ -1,10 +1,11 @@
+package Main;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import Model.Agenda;
 import Model.Aluno;
 import Model.Escalonador;
-
 
 public class Main
 {
@@ -21,8 +22,10 @@ public class Main
 				{false, false, true, false, false, false, true, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
 				{false, false, true, false, false, false, true, false, false, false})));
+		alunos.add(new Aluno(new Agenda(new boolean[]
+				{false, false, false, true, false, false, false, false, false, false})));
 		
-		Agenda a = escalonador.escalonar(alunos, (byte)4);
+		Agenda a = escalonador.escalonar(alunos, (byte)1);
 		
 		for (int i = 0; i < a.getAgenda().length; i++)
 		{
@@ -30,6 +33,11 @@ public class Main
 		}
 		
 		System.out.println(a.getPontuacao());
+		
+		/*
+		 * TODO verificar este cenario. pois se executado N vezes em algumas situacoes
+		 * nao retorna a melhor situacao (maximo local)
+		 */
 	}
 
 }
