@@ -18,9 +18,25 @@ public class Escalonador
 		melhorAgenda = new Agenda(new boolean[]{false,false,false,false,false,false,false,false,false,false});
 	}
 
+	private boolean exists(Agenda random)
+	{
+		for (int i = 0; i < agendas.length; i++)
+		{
+			if (agendas[i] == null)
+				break;
+			
+			if (agendas[i].equalsTo(random))
+			{
+				return true;
+			}
+		}
+		
+		return false;
+	}
 	
 	public Agenda escalonar(List<Aluno> alunos, byte maxTreino)
 	{
+		int p = 0;
 		for (int i = 1; i <= maxTreino; i++)
 		{
 			long combinacao = combinacao(10, i);
@@ -29,33 +45,42 @@ public class Escalonador
 			{
 				Agenda random = randomAgenda((byte)i);
 				
-				for (int k = 0; k < combinacao; k++)
+				if(!exists(random))
 				{
-					if (agendas[k] == null)
+					agendas[p] = random;
+					int pontuacao = pontuacaoAgenda(alunos, agendas[p]);
+					
+					agendas[p].setPontuacao(pontuacao);
+					
+					if (agendas[p].getPontuacao() > melhorAgenda.getPontuacao())
 					{
-						agendas[k] = random;
+						melhorAgenda = agendas[p];
 					}
-					else 
-					{
-						if (!agendas[k].equalsTo(random))
-						{
-							agendas[k] = random;
-							int pontuacao = pontuacaoAgenda(alunos, agendas[k]);
-							
-							agendas[k].setPontuacao(pontuacao);
-							
-							if (agendas[k].getPontuacao() > melhorAgenda.getPontuacao())
-							{
-								melhorAgenda = agendas[k];
-							}
-						}
-						else
-						{
-							j--;
-						}
-					}
+					p++;
+				}
+				else 
+				{
+					j--;
 				}
 			}
+			
+			/*
+			// garantindo melhor resultado, depois arrumo essa gamb
+			for (Agenda a : agendas)
+			{
+				if(a == null)
+					break;
+				
+				int pontuacao = pontuacaoAgenda(alunos, a);
+				
+				a.setPontuacao(pontuacao);
+				
+				if (a.getPontuacao() > melhorAgenda.getPontuacao())
+				{
+					melhorAgenda = a;
+				}
+			
+			}*/
 		}
 		
 		return melhorAgenda;
