@@ -3,6 +3,8 @@ package Model;
 import java.util.List;
 import java.util.Random;
 
+import javax.swing.JOptionPane;
+
 
 public class Escalonador
 {
@@ -34,8 +36,33 @@ public class Escalonador
 		return false;
 	}
 	
+	private boolean valido(List<Aluno> alunos)
+	{
+		for (Aluno aluno : alunos)
+		{
+			Agenda agenda = aluno.getAgenda();
+			int p = 0;
+			for (boolean b : agenda.getAgenda())
+			{
+				if (b)
+					p++;
+			}
+			
+			if (p == 10)
+				return false;
+			p = 0;
+		}
+		return true;
+	}
+	
 	public Agenda escalonar(List<Aluno> alunos, byte maxTreino)
 	{
+		if (!valido(alunos))
+		{
+			JOptionPane.showMessageDialog(null, "Um aluno tem que ter no mínimo um horário com aula");
+			System.exit(0);
+		}
+		
 		int p = 0;
 		for (int i = 1; i <= maxTreino; i++)
 		{
