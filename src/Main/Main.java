@@ -84,7 +84,7 @@ public class Main
 				test20();
 				break;
             default:
-                System.out.println("Este n„o È um teste v·lido!");
+                System.out.println("Este n√£o √© um teste v√°lido!");
 			}
 		}while(opt!=0);
 		ler.close();
@@ -178,7 +178,7 @@ public class Main
 		
 		long finish = System.currentTimeMillis();  
 		long total = finish - start;
-		System.out.println("Tempo total de execuÁ„o: " + total + " milisegundos");
+		System.out.println("Tempo total de execu√ß√£o: " + total + " milisegundos");
 	
 	}
 	
@@ -240,7 +240,7 @@ public class Main
 		
 		long finish = System.currentTimeMillis();  
 		long total = finish - start;
-		System.out.println("Tempo total de execuÁ„o: " + total + " milisegundos");
+		System.out.println("Tempo total de execu√ß√£o: " + total + " milisegundos");
 	
 	}
 	
@@ -302,7 +302,7 @@ public class Main
 		
 		long finish = System.currentTimeMillis();  
 		long total = finish - start;
-		System.out.println("Tempo total de execuÁ„o: " + total + " milisegundos");
+		System.out.println("Tempo total de execu√ß√£o: " + total + " milisegundos");
 	
 	}
 	
@@ -364,7 +364,7 @@ public class Main
 		
 		long finish = System.currentTimeMillis();  
 		long total = finish - start;
-		System.out.println("Tempo total de execuÁ„o: " + total + " milisegundos");
+		System.out.println("Tempo total de execu√ß√£o: " + total + " milisegundos");
 	
 	}
 	
@@ -426,7 +426,7 @@ public class Main
 		
 		long finish = System.currentTimeMillis();  
 		long total = finish - start;
-		System.out.println("Tempo total de execuÁ„o: " + total + " milisegundos");
+		System.out.println("Tempo total de execu√ß√£o: " + total + " milisegundos");
 	
 	}
 	
@@ -488,7 +488,7 @@ public class Main
 		
 		long finish = System.currentTimeMillis();  
 		long total = finish - start;
-		System.out.println("Tempo total de execuÁ„o: " + total + " milisegundos");
+		System.out.println("Tempo total de execu√ß√£o: " + total + " milisegundos");
 	
 	}
 	
@@ -550,7 +550,7 @@ public class Main
 		
 		long finish = System.currentTimeMillis();  
 		long total = finish - start;
-		System.out.println("Tempo total de execuÁ„o: " + total + " milisegundos");
+		System.out.println("Tempo total de execu√ß√£o: " + total + " milisegundos");
 	
 	}
 	
@@ -612,7 +612,7 @@ public class Main
 		
 		long finish = System.currentTimeMillis();  
 		long total = finish - start;
-		System.out.println("Tempo total de execuÁ„o: " + total + " milisegundos");
+		System.out.println("Tempo total de execu√ß√£o: " + total + " milisegundos");
 	
 	}
 	
@@ -674,7 +674,7 @@ public class Main
 		
 		long finish = System.currentTimeMillis();  
 		long total = finish - start;
-		System.out.println("Tempo total de execuÁ„o: " + total + " milisegundos");
+		System.out.println("Tempo total de execu√ß√£o: " + total + " milisegundos");
 	
 	}
 	
@@ -736,7 +736,7 @@ public class Main
 		
 		long finish = System.currentTimeMillis();  
 		long total = finish - start;
-		System.out.println("Tempo total de execuÁ„o: " + total + " milisegundos");
+		System.out.println("Tempo total de execu√ß√£o: " + total + " milisegundos");
 	
 	}
 	
@@ -798,7 +798,7 @@ public class Main
 		
 		long finish = System.currentTimeMillis();  
 		long total = finish - start;
-		System.out.println("Tempo total de execuÁ„o: " + total + " milisegundos");
+		System.out.println("Tempo total de execu√ß√£o: " + total + " milisegundos");
 	
 	}
 	
@@ -860,7 +860,7 @@ public class Main
 		
 		long finish = System.currentTimeMillis();  
 		long total = finish - start;
-		System.out.println("Tempo total de execuÁ„o: " + total + " milisegundos");
+		System.out.println("Tempo total de execu√ß√£o: " + total + " milisegundos");
 	
 	}
 	
@@ -922,7 +922,7 @@ public class Main
 		
 		long finish = System.currentTimeMillis();  
 		long total = finish - start;
-		System.out.println("Tempo total de execuÁ„o: " + total + " milisegundos");
+		System.out.println("Tempo total de execu√ß√£o: " + total + " milisegundos");
 	
 	}
 	
@@ -984,7 +984,7 @@ public class Main
 		
 		long finish = System.currentTimeMillis();  
 		long total = finish - start;
-		System.out.println("Tempo total de execuÁ„o: " + total + " milisegundos");
+		System.out.println("Tempo total de execu√ß√£o: " + total + " milisegundos");
 	
 	}
 	
@@ -1046,7 +1046,7 @@ public class Main
 		
 		long finish = System.currentTimeMillis();  
 		long total = finish - start;
-		System.out.println("Tempo total de execuÁ„o: " + total + " milisegundos");
+		System.out.println("Tempo total de execu√ß√£o: " + total + " milisegundos");
 	
 	}
 	
@@ -1058,13 +1058,13 @@ public class Main
 		
 		List<Aluno> alunos= new ArrayList<>();
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, false,true, true,true, true,true, true,true, true})));//1
+				{true, true, false, false, false, false, false, false, false, false})));//1
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, false,true, true,true, true,true, true})));
+				{false, false, true, true, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,true, true,true, true,false, true,true, true})));
+				{false, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,true, true,true, true,true, true,true, false})));
+				{false, false, false, false, false, false, false, false, false, true})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
 				{false, false,true, true,true, true,true, true,true, true})));//5
 		alunos.add(new Aluno(new Agenda(new boolean[]
@@ -1108,7 +1108,7 @@ public class Main
 		
 		long finish = System.currentTimeMillis();  
 		long total = finish - start;
-		System.out.println("Tempo total de execuÁ„o: " + total + " milisegundos");
+		System.out.println("Tempo total de execu–∑–≥o: " + total + " milisegundos");
 	
 	}
 	
@@ -1170,7 +1170,7 @@ public class Main
 		
 		long finish = System.currentTimeMillis();  
 		long total = finish - start;
-		System.out.println("Tempo total de execuÁ„o: " + total + " milisegundos");
+		System.out.println("Tempo total de execu–∑–≥o: " + total + " milisegundos");
 	
 	}
 	
@@ -1232,7 +1232,7 @@ public class Main
 		
 		long finish = System.currentTimeMillis();  
 		long total = finish - start;
-		System.out.println("Tempo total de execuÁ„o: " + total + " milisegundos");
+		System.out.println("Tempo total de execu–∑–≥o: " + total + " milisegundos");
 	
 	}
 	
@@ -1294,7 +1294,7 @@ public class Main
 		
 		long finish = System.currentTimeMillis();  
 		long total = finish - start;
-		System.out.println("Tempo total de execuÁ„o: " + total + " milisegundos");
+		System.out.println("Tempo total de execu–∑–≥o: " + total + " milisegundos");
 	
 	}
 	
@@ -1356,7 +1356,7 @@ public class Main
 		
 		long finish = System.currentTimeMillis();  
 		long total = finish - start;
-		System.out.println("Tempo total de execuÁ„o: " + total + " milisegundos");
+		System.out.println("Tempo total de execu–∑–≥o: " + total + " milisegundos");
 	
 	}
 
