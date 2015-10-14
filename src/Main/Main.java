@@ -1066,37 +1066,37 @@ public class Main
 		alunos.add(new Aluno(new Agenda(new boolean[]
 				{false, false, false, false, false, false, false, false, false, true})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, false,true, true,true, true,true, true,true, true})));//5
+				{true, true, false, false, false, false, false, false, false, false})));//5
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, false,true, true,true, true,true, true})));
+				{false, false, true, true, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,true, true,true, true,false, true,true, true})));
+				{false, false, false, false, false, false, true, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,true, true,true, true,true, true,true, false})));
+				{false, false, false, false, false, false, false, false, false, true})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, false,true, true,true, true,true, true,true, true})));
+				{true, true, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, false,true, true,true, true,true, true})));//10
+				{false, false, true, true, false, false, false, false, false, false})));//10
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,true, true,true, true,false, true,true, true})));
+				{false, false, false, false, false, false, true, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,true, true,true, true,true, true,true, false})));
+				{false, false, false, false, false, false, false, false, false, true})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, false,true, true,true, true,true, true,true, true})));
+				{true, true, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, false,true, true,true, true,true, true})));
+				{false, false, true, true, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,true, true,true, true,false, true,true, true})));//15
+				{false, false, false, false, false, false, true, false, false, false})));//15
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,true, true,true, true,true, true,true, false})));
+				{false, false, false, false, false, false, false, false, false, true})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, false,true, true,true, true,true, true,true, true})));
+				{true, true, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, false,true, true,true, true,true, true})));
+				{false, false, true, true, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,true, true,true, true,false, true,true, true})));
+				{false, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,true, true,true, true,true, true,true, false})));//20
+				{false, false, false, false, false, false, false, false, false, false})));//20
 		
 		Agenda a = escalonador.escalonar(alunos, (byte)1);
 		
@@ -1120,45 +1120,45 @@ public class Main
 		
 		List<Aluno> alunos= new ArrayList<>();
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,true, true,true, true,true, true})));//1
+				{true, false, false, false, false, false, false, false, false, false})));//1
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,true, true,true, true,true, true})));
+				{true, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,true, true,true, true,true, true})));
+				{true, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,true, true,true, true,true, true})));
+				{true, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,true, true,true, true,true, true})));//5
+				{true, false, false, false, false, false, false, false, false, false})));//5
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,true, true,true, true,true, true})));
+				{true, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,true, true,true, true,true, true})));
+				{true, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,true, true,true, true,true, true})));
+				{true, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,true, true,true, true,true, true})));
+				{true, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,false, true,true, true,true, true,true, true})));//10
+				{true, true, false, false, false, false, false, false, false, false})));//10
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));
+				{false, false, true, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));
+				{false, false, true, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));
+				{false, false, true, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));
+				{false, false, true, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));//15
+				{false, false, true, false, false, false, false, false, false, false})));//15
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));
+				{false, false, true, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));
+				{false, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));
+				{false, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));
+				{false, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));//20
+				{false, false, false, false, false, false, false, false, false, false})));//20
 		
 		Agenda a = escalonador.escalonar(alunos, (byte)1);
 		
@@ -1182,45 +1182,45 @@ public class Main
 		
 		List<Aluno> alunos= new ArrayList<>();
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,true, true,true, true,true, true})));//1
+				{true, false, false, false, false, false, false, false, false, false})));//1
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,true, true,true, true,true, true})));
+				{true, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,true, true,true, true,true, true})));
+				{true, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,true, true,true, true,true, true})));
+				{true, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,true, true,true, true,true, true})));//5
+				{true, false, false, false, false, false, false, false, false, false})));//5
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,true, true,true, true,true, true})));
+				{true, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,true, true,true, true,true, true})));
+				{true, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,true, true,true, true,true, true})));
+				{true, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,true, true,true, true,true, true})));
+				{true, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,false, true,true, true,true, true,true, true})));//10
+				{true, true, false, false, false, false, false, false, false, false})));//10
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));
+				{false, false, true, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));
+				{false, false, true, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));
+				{false, false, true, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));
+				{false, false, true, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));//15
+				{false, false, true, false, false, false, false, false, false, false})));//15
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));
+				{false, false, true, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));
+				{false, false, true, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));
+				{false, false, true, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));
+				{false, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));//20
+				{false, false, false, false, false, false, false, false, false, false})));//20
 		
 		Agenda a = escalonador.escalonar(alunos, (byte)1);
 		
@@ -1244,45 +1244,45 @@ public class Main
 		
 		List<Aluno> alunos= new ArrayList<>();
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));//1
+				{false, false, true, false, false, false, false, false, false, false})));//1
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,true, true,true, true})));
+				{true, false, false, false, true, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,true, false,true, true,true, true,true, true})));
+				{false, false, false, true, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,true, true,true, false,true, true,true, true})));
+				{false, true, false, false, true, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));//5
+				{false, false, true, false, false, false, false, false, false, false})));//5
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,true, true,true, true})));
+				{true, false, false, false, true, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,true, false,true, true,true, true,true, true})));
+				{false, false, false, true, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, false,true, true,true, false,true, true,true, true})));
+				{false, true, false, false, true, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));
+				{false, false, true, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,true, true,true, true})));//10
+				{true, false, false, false, true, false, false, false, false, false})));//10
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,true, false,true, true,true, true,true, true})));
+				{false, false, false, true, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, false,true, true,true, false,true, true,true, true})));
+				{false, true, false, false, true, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));
+				{false, false, true, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,true, true,true, true})));
+				{true, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,true, false,true, true,true, true,true, true})));//15
+				{false, false, false, true, false, false, false, false, false, false})));//15
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, false,true, true,true, false,true, true,true, true})));
+				{false, true, false, false, true, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,false, true,true, true,true, true,true, true})));
+				{false, false, true, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,true, true,true, true})));
+				{true, false, false, false, true, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, true,true, false,true, true,true, true,true, true})));
+				{false, false, false, false, false, false, false, false, false, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{true, false,true, true,true, false,true, true,true, true})));//20
+				{false, true, false, false, true, false, false, false, false, false})));//20
 		
 		Agenda a = escalonador.escalonar(alunos, (byte)1);
 		
@@ -1306,45 +1306,45 @@ public class Main
 		
 		List<Aluno> alunos= new ArrayList<>();
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,false, true,false, true})));//1
+				{true, false, false, false, true, false, true, false, true, false})));//1
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,false, true,false, true})));
+				{true, false, false, false, true, false, true, false, true, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,false, true,false, true})));
+				{true, false, false, false, true, false, true, false, true, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,false, true,false, true})));
+				{true, false, false, false, true, false, true, false, true, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,false, true,false, true})));//5
+				{true, false, false, false, true, false, true, false, true, false})));//5
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,false, true,false, true})));
+				{true, false, false, false, true, false, true, false, true, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,false, true,false, true})));
+				{true, false, false, false, true, false, true, false, true, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,false, true,false, true})));
+				{true, false, false, false, true, false, true, false, true, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,false, true,false, true})));
+				{true, false, false, false, true, false, true, false, true, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,false, true,false, true})));//10
+				{true, false, false, false, true, false, true, false, true, false})));//10
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,false, true,false, true})));
+				{true, false, false, false, true, false, true, false, true, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,false, true,false, true})));
+				{true, false, false, false, true, false, true, false, true, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,false, true,false, true})));
+				{true, false, false, false, true, false, true, false, true, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,false, true,false, true})));
+				{true, false, false, false, true, false, true, false, true, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,false, true,false, true})));//15
+				{true, false, false, false, true, false, true, false, true, false})));//15
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,false, true,false, true})));
+				{true, false, false, false, true, false, true, false, true, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,false, true,false, true})));
+				{true, false, false, false, true, false, true, false, true, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,false, true,false, true})));
+				{true, false, false, false, true, false, true, false, true, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,false, true,false, true})));
+				{true, false, false, false, true, false, true, false, true, false})));
 		alunos.add(new Aluno(new Agenda(new boolean[]
-				{false, true,true, true,false, true,false, true,false, true})));//20
+				{true, false, false, false, true, false, true, false, true, false})));//20
 		
 		Agenda a = escalonador.escalonar(alunos, (byte)1);
 		
