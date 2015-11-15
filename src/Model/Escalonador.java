@@ -79,35 +79,31 @@ public class Escalonador
 					
 					agendas[p].setPontuacao(pontuacao);
 					
-					if (agendas[p].getPontuacao() > melhorAgenda.getPontuacao())
+					if(agendas[p].getPontuacao() >= alunos.size())
 					{
-						melhorAgenda = agendas[p];
+						return agendas[p];
 					}
-					p++;
+					else 
+					{
+						if (((agendas[p].getPontuacao()/alunos.size())* 100) >= 80)
+						{
+							return agendas[p];
+						}
+						else 
+						{
+							if (agendas[p].getPontuacao() > melhorAgenda.getPontuacao())
+							{
+								melhorAgenda = agendas[p];
+							}
+							p++;
+						}
+					}
 				}
 				else 
 				{
 					j--;
 				}
 			}
-			
-			/*
-			// garantindo melhor resultado, depois arrumo essa gamb
-			for (Agenda a : agendas)
-			{
-				if(a == null)
-					break;
-				
-				int pontuacao = pontuacaoAgenda(alunos, a);
-				
-				a.setPontuacao(pontuacao);
-				
-				if (a.getPontuacao() > melhorAgenda.getPontuacao())
-				{
-					melhorAgenda = a;
-				}
-			
-			}*/
 		}
 		
 		return melhorAgenda;
